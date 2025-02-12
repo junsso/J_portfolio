@@ -1,0 +1,83 @@
+@mixin zero-set {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    //vertical-align: middle;
+}
+@mixin flex-normal{
+    display: flex;
+    display: -webkit-flex;
+}
+@mixin flex-row{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+@mixin flex-clm{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+@mixin table-set{
+    border-collapse: collapse;
+    width: 100%;
+    th, td{
+        padding: 5px;
+    }
+}
+@mixin scrollbar($color: rgba(0,0,0,.1)){
+    overflow: auto;
+    &::-webkit-scrollbar{
+        width: 8px;
+        height: 8px;
+    } 
+    &::-webkit-scrollbar-track{
+        background-color: transparent; 
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $color;
+        border-radius: 10px;
+    }
+}
+@mixin ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+@mixin ellipsis2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: inherit;
+    word-break: break-all;
+}
+
+@function rem-calc($size) {
+    @return calc($size / $base-font-size * 1rem);
+}
+
+
+// 모바일 레이아웃
+@mixin tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+  }
+// 태블릿~PC 레이아웃 (태블릿환경에서는 PC레이아웃 유지)
+@mixin mobile {
+    @media (max-width: #{$breakpoint-mobile}) {
+        @content;
+    }
+}
+// 태블릿~mo 레이아웃 (태블릿환경에서는 PC레이아웃 유지)
+@mixin mobileS {
+  @media (max-width: #{$mobile-max-width}) {
+      @content;
+  }
+}
+

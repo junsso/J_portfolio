@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, viewport-fit=cover" />
+    <title>전소영의 포트폴리오</title>
+
+    <link rel="stylesheet" href="../common/css/import.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="intro"></div>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script>
+        let textIntro = document.getElementById('intro');
+        let text = "Web Publisher\n전소영";
+        let i = 0;
+
+        function type(){
+            if(i < text.length){
+                textIntro.innerHTML += text.charAt(i);
+                i++
+                setTimeout(type, Math.floor(Math.random() * 400) + 50);
+            }
+        }
+        
+        type();
+        // if($(window).width() <= 960) {
+        //     text = '교과서의\n새로운\n내일';
+        // }
+        
+        // 5초 뒤 메인 진입
+        setTimeout(function(){
+            location.href = "index.html";
+            textIntro.classList.add('hide');
+		}, 6500);
+    </script>
+</body>
+</html>

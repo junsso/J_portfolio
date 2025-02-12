@@ -1,0 +1,36 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap); 
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap);
+
+// font, color
+$font-stack: 'Roboto', 'Noto Sans KR', 'Noto Sans SC', sans-serif;
+$base-font-size: 16px;
+$base-text-color: #111112;
+$base-dark-color: #333;
+$base-dark-bg-color: #000;
+$base-font-weight: 400; 
+$base-letter-spacing: -0.5px; 
+$base-line-height: 1.12;
+$base-radius: 5px;
+$transparent: transparent;
+$guide-color: #E0E0E0;
+
+$base-color: #ffffff;
+$bg-box-color: #F0F3F3;
+
+$bg-grays:(
+    #F8F8F8, //1
+    #525252, //2
+    #E5E5E5, //3
+    #666666, //4
+    #efefef, //5
+    #ababab, //6
+);
+
+// url
+$img-url: '../../../common/image/';
+
+// Breakpoints
+$breakpoint-mobile: 960px;
+$breakpoint-tablet: 1720px;
+$mobile-max-width: 680px;

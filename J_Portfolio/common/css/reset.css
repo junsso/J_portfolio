@@ -1,0 +1,79 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap);
+p, ul, ol, h1, h2, h3, h4, h5, div, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  font-family: Roboto, Noto Sans KR, Noto Sans SC, sans-serif;
+  font-size: 16px;
+  word-break: break-all;
+  color: #111112;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
+header, article, section, nav, aside, footer {
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, select, button {
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-family: Roboto, Noto Sans KR, Noto Sans SC, sans-serif;
+  font-size: 16px;
+  color: #111112;
+}
+
+i, em, address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+label, button, input[type=submit] {
+  cursor: pointer;
+  display: inline-block;
+}
+
+a, input, button {
+  border: 0 none;
+  border-radius: 0;
+  font-family: Roboto, Noto Sans KR, Noto Sans SC, sans-serif;
+  font-size: 16px;
+  color: #111112;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:active, button:active, input:focus {
+  outline: none;
+}
+
+::-moz-placeholder {
+  color: #E0E0E0;
+  font-weight: 400;
+}
+
+::placeholder {
+  color: #E0E0E0;
+  font-weight: 400;
+}/*# sourceMappingURL=reset.css.map */

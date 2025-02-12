@@ -162,6 +162,9 @@ section.about .description .img-wrap {
 section.about .description p {
   font-size: 1.125rem;
   width: calc(100% - 200px - 30px);
+  padding: 1.25rem;
+  border-radius: 6px;
+  background: linear-gradient(-45deg, transparent 4%, rgba(229, 229, 229, 0.7) 0);
 }
 section.about .list {
   display: flex;
@@ -194,6 +197,7 @@ section.career .list .project {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  flex-wrap: wrap;
 }
 section.career .list h3 {
   font-size: 1.5rem;
@@ -204,6 +208,9 @@ section.career .list > li {
   gap: 10px;
   border-bottom: 1px solid #525252;
   padding: 30px 20px;
+}
+section.career .list > li > p {
+  word-break: keep-all;
 }
 section.career .list ul {
   display: flex;
@@ -264,6 +271,7 @@ section.contact .description .col {
   gap: 1.25rem;
   flex-wrap: wrap;
   background: linear-gradient(-45deg, transparent 4%, rgba(239, 239, 239, 0.7) 0);
+  border-radius: 6px;
   padding: 0.9375rem;
 }
 section.contact .description .col span {
@@ -457,5 +465,23 @@ section .contents > div {
   }
   section.portfolio .sub-title h3 {
     font-size: 1.75rem;
+  }
+  section.career .list ul li p {
+    min-width: 90px;
+  }
+  section.career .list ul li span {
+    font-size: 14px;
+  }
+  section.career .list .project {
+    gap: 5px;
+  }
+  section.contact .description .col {
+    flex: auto;
+  }
+  section.contact .description .col span {
+    font-size: 16px;
+  }
+  section.contact .description .col strong {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=content.css.map */

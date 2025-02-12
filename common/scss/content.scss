@@ -163,6 +163,9 @@ section{
             p{
                 font-size: rem-calc(18px);
                 width: calc(100% - 200px - 30px);
+                padding: rem-calc(20px);
+                border-radius: 6px;
+                background: linear-gradient(-45deg, transparent 4%, rgba(229, 229, 229, 0.7) 0);
             }
         }
         .list{
@@ -197,6 +200,7 @@ section{
                 align-items: center;
                 justify-content: space-between;
                 gap: 10px;
+                flex-wrap: wrap;
             }
             h3{
                 font-size: rem-calc(24px);
@@ -207,6 +211,9 @@ section{
                 gap: 10px;
                 border-bottom: 1px solid nth($bg-grays,2);
                 padding: 30px 20px;
+                >p{
+                    word-break: keep-all;
+                }
             }
             ul{
                 display: flex;
@@ -273,6 +280,7 @@ section{
                 gap: rem-calc(20px);
                 flex-wrap: wrap;
                 background: linear-gradient(-45deg, transparent 4%, rgba(239,239,239,0.7) 0);
+                border-radius: 6px;
                 padding: rem-calc(15px);
                 span{
                     font-size: rem-calc(20px);
@@ -482,6 +490,36 @@ section{
             .sub-title{
                 h3{
                     font-size: rem-calc(28px);
+                }
+            }
+        }
+        &.career{
+            .list{
+                ul{
+                    li{
+                        p{
+                            min-width: 90px;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .project{
+                    gap: 5px;
+                }
+            }
+        }
+        &.contact{
+            .description{
+                .col{
+                    flex: auto;
+                    span{
+                        font-size: 16px;
+                    }
+                    strong{
+                        font-size: 18px;
+                    }
                 }
             }
         }
